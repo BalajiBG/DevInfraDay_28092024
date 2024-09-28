@@ -6,7 +6,7 @@ sts_client = boto3.client('sts')
 
 AWS_REGION: Final[str] = os.environ["AWS_REGION"]
 AWS_ACCOUNT_ID = sts_client.get_caller_identity()['Account']
-
+#test
 DYNAMODB_TABLE_NAME: Final[str] = "boards"
 EMAILS_SQS_QUEUE: Final[str] = "retroboard-emails"
 SLACK_ALERTS_SNS_TOPIC: Final[str] = "retroboard-alerts"
